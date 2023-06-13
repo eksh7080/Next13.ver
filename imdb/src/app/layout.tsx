@@ -1,5 +1,6 @@
 import Header from '@/components/Header'
 import './global.css'
+import Providers from './Providers'
 
 export const metadata = {
   title: 'INVU',
@@ -14,6 +15,8 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
+        <Providers>
+
           {/* Header */}
           <Header />
 
@@ -22,6 +25,7 @@ export default function RootLayout({
           {/* SearchBox */}
 
         {children}
+        </Providers>
       </body>
     </html>
   )
